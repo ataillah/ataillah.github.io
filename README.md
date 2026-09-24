@@ -18,7 +18,7 @@
 <body>
 
     <header>
-        <h1>[Nama Anda di Sini]</h1>
+        <h1>[Ataillah]</h1>
         <p>Mahasiswa Program Studi Teknologi Rekayasa Komputer dan Jaringan</p>
     </header>
 
@@ -55,7 +55,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 [Nama Anda]. Dihosting dengan GitHub Pages.</p>
+        <p>&copy; 2026 [Ataillah]. Dihosting dengan GitHub Pages.</p>
     </footer>
 
 </body>
