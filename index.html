@@ -1,1 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Ataillah</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; padding-top: 76px; background-color: #f8f9fa; color: #333; }
+        .navbar { background-color: #0f172a !important; padding: 15px 0; }
+        .hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 100px 0; }
+        .section-title { font-weight: 700; color: #0f172a; margin-bottom: 2rem; position: relative; padding-bottom: 10px; }
+        .section-title::after { content: ''; position: absolute; left: 0; bottom: 0; width: 60px; height: 4px; background-color: #3b82f6; }
+        .card { border: none; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s; margin-bottom: 20px; }
+        .card:hover { transform: translateY(-5px); }
+        .badge-skill { font-size: 0.9rem; padding: 8px 15px; margin: 0 5px 10px 0; background-color: #e2e8f0; color: #1e293b; font-weight: 600; }
+        .timeline-item { border-left: 3px solid #3b82f6; padding-left: 20px; margin-bottom: 30px; position: relative; }
+        .timeline-item::before { content: ''; position: absolute; left: -10px; top: 0; width: 17px; height: 17px; background-color: #3b82f6; border-radius: 50%; border: 3px solid #fff; }
+        footer { background-color: #0f172a; color: #cbd5e1; }
+    </style>
+</head>
+<body id="beranda">
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#beranda">Ataillah.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pengalaman">Pengalaman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyek">Proyek IT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-3">Ataillah</h1>
+            <p class="lead mb-4">Mahasiswa Teknologi Rekayasa Komputer Jaringan</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#proyek" class="btn btn-primary btn-lg rounded-pill px-4 shadow">Lihat Portofolio</a>
+                <a href="#kontak" class="btn btn-outline-light btn-lg rounded-pill px-4">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang & Keahlian -->
+    <section id="tentang" class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Ringkasan Profil</h2>
+                    <p class="text-secondary" style="line-height: 1.8;">
+                        Mahasiswa aktif Teknologi Rekayasa Komputer Jaringan (TRKJ) di Politeknik Negeri Lhokseumawe dengan ketertarikan kuat di bidang jaringan komputer, administrasi sistem, dan teknologi informasi. Memiliki pemahaman dasar mengenai kecerdasan buatan (Al), simulasi jaringan dengan Cisco Packet Tracer, serta konfigurasi perangkat keras dan lunak. Berorientasi pada detail, cepat beradaptasi dengan teknologi baru, dan siap berkontribusi dalam lingkungan kerja profesional maupun program magang.
+                    </p>
+                    <div class="mt-4">
+                        <h5 class="fw-bold mb-3">Pendidikan</h5>
+                        <div class="timeline-item">
+                            <h6 class="fw-bold mb-0">Computer Network Engineering Technology</h6>
+                            <p class="text-secondary mb-1">Lhokseumawe State Polytechnic</p>
+                            <small class="text-muted">2023 - Sekarang</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">Keahlian</h2>
+                    <h5 class="fw-bold mb-3">IT & Jaringan</h5>
+                    <div>
+                        <span class="badge badge-skill rounded-pill">Cisco Packet Tracer</span>
+                        <span class="badge badge-skill rounded-pill">Ubuntu Server & Debian</span>
+                        <span class="badge badge-skill rounded-pill">Docker</span>
+                        <span class="badge badge-skill rounded-pill">Visual Studio Code</span>
+                        <span class="badge badge-skill rounded-pill">Arduino IDE</span>
+                        <span class="badge badge-skill rounded-pill">Flutter & SQLite</span>
+                    </div>
+                    <h5 class="fw-bold mt-4 mb-3">Perangkat Lunak Umum</h5>
+                    <div>
+                        <span class="badge badge-skill rounded-pill">Figma</span>
+                        <span class="badge badge-skill rounded-pill">Adobe Photoshop</span>
+                        <span class="badge badge-skill rounded-pill">Canva</span>
+                        <span class="badge badge-skill rounded-pill">Microsoft Office (Word, Excel, PPT)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengalaman -->
+    <section id="pengalaman" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="section-title">Pengalaman Kerja</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card p-4">
+                        <div class="d-flex justify-content-between align-items-start flex-wrap">
+                            <div>
+                                <h4 class="fw-bold text-primary mb-1">Magang (Internship)</h4>
+                                <h6 class="text-secondary mb-3">PT Extend Indonesia — Medan Sunggal</h6>
+                            </div>
+                            <span class="badge bg-primary rounded-pill py-2 px-3">04 Agustus - 01 September 2026</span>
+                        </div>
+                        <ul class="text-secondary mt-2" style="line-height: 1.8;">
+                            <li>Facilitated project development by collaborating with team members to optimize processes and boost overall efficiency.</li>
+                            <li>Performed comprehensive research on industry trends, delivering critical insights that shaped strategic decision-making.</li>
+                            <li>Coordinated daily operations by overseeing administrative tasks, ensuring seamless workflow and punctual project completion.</li>
+                            <li>Engaged in client meetings, articulating findings clearly and enhancing client relationships through effective communication.</li>
+                            <li>Developed compelling presentations that showcased project outcomes, promoting a culture of knowledge sharing within the team.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek Portofolio -->
+    <section id="proyek" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mx-auto" style="width: fit-content;">Proyek Portofolio & Praktikum</h2>
+            <div class="row g-4 mt-2">
+                <!-- Proyek 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 p-3">
+                        <div class="card-body">
+                            <div class="mb-3 text-primary"><i class="fa-solid fa-server fa-2x"></i></div>
+                            <h5 class="fw-bold">Arsitektur Local Cloud Storage</h5>
+                            <p class="text-secondary small">Pengimplementasian sistem penyimpanan cloud berskala lokal. Proyek ini dikonfigurasi menggunakan <strong>Ubuntu Server</strong> dan di-deploy dengan sistem kontainer <strong>Docker</strong> yang menjalankan layanan Nextcloud.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyek 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 p-3">
+                        <div class="card-body">
+                            <div class="mb-3 text-primary"><i class="fa-solid fa-mobile-screen fa-2x"></i></div>
+                            <h5 class="fw-bold">EduList - Aplikasi Manajemen Tugas</h5>
+                            <p class="text-secondary small">Pengembangan aplikasi mobile sederhana untuk mengelola jadwal dan tugas perkuliahan. Aplikasi ini dibangun menggunakan antarmuka dari framework <strong>Flutter</strong> dan basis data lokal <strong>SQLite</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyek 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 p-3">
+                        <div class="card-body">
+                            <div class="mb-3 text-primary"><i class="fa-solid fa-film fa-2x"></i></div>
+                            <h5 class="fw-bold">Rekonstruksi Visual Sejarah Aceh</h5>
+                            <p class="text-secondary small">Eksplorasi kecerdasan buatan dalam pembuatan instruksi (prompting) spesifik untuk menghasilkan representasi media dokumenter dan animasi seputar tokoh sejarah Aceh seperti Sultan Iskandar Muda dan Laksamana Malahayati.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sertifikasi -->
+    <section id="sertifikasi" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="section-title">Sertifikasi & Pelatihan</h2>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="timeline-item">
+                        <h6 class="fw-bold">Belajar Dasar Artificial Intelligence (AI)</h6>
+                        <p class="text-secondary small mb-0">Dicoding Academy</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h6 class="fw-bold">Menembus Bates Digital</h6>
+                        <p class="text-secondary small mb-0">Webinar Nasional - Sinergi Edge dan Cloud dalam Ekosistem IoT</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h6 class="fw-bold">Strategi Cerdas Mengintegrasikan AI Big Data</h6>
+                        <p class="text-secondary small mb-0">Webinar Nasional - Business Intelligence untuk Keunggulan Kompetitif</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="timeline-item">
+                        <h6 class="fw-bold">Inovasi & Adaptabilitas</h6>
+                        <p class="text-secondary small mb-0">Webinar Nasional - Pilar Ketahanan Bisnis di Era Disrupsi dan Volatilitas</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h6 class="fw-bold">Empowering Entrepreneurs</h6>
+                        <p class="text-secondary small mb-0">Webinar Nasional - Sinergi Komunitas dan Ekosistem Inovatif</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h6 class="fw-bold">Data, Transparansi, dan Akuntabilitas</h6>
+                        <p class="text-secondary small mb-0">Webinar Nasional - Akuntansi di Era Digitalisasi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title mx-auto" style="width: fit-content;">Kontak</h2>
+            <p class="text-secondary mb-4">Mari terhubung dan berkolaborasi bersama.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-4 mt-4">
+                <div class="card p-4 text-center" style="width: 250px;">
+                    <i class="fa-solid fa-envelope fa-2x text-primary mb-3"></i>
+                    <h6 class="fw-bold">Email</h6>
+                    <a href="mailto:atailahsp@gmail.com" class="text-decoration-none text-secondary small">atailahsp@gmail.com</a>
+                </div>
+                <div class="card p-4 text-center" style="width: 250px;">
+                    <i class="fa-solid fa-phone fa-2x text-primary mb-3"></i>
+                    <h6 class="fw-bold">Telepon</h6>
+                    <span class="text-secondary small">0822 8595 601</span>
+                </div>
+                <div class="card p-4 text-center" style="width: 250px;">
+                    <i class="fa-solid fa-location-dot fa-2x text-primary mb-3"></i>
+                    <h6 class="fw-bold">Lokasi</h6>
+                    <span class="text-secondary small">Gampong Seupeng, Aceh Utara</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-0 small">&copy; 2026 Ataillah. Dihosting menggunakan GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
